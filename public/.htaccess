@@ -1,0 +1,22 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^yahavi.com [NC]
+RewriteRule ^(.*)$ http://www.yahavi.com/$1 [L,R=301,NC]
+
+#RewriteCond %{HTTP_HOST} ^yahavi.com [NC]
+#RewriteRule ^(.*)$ https://www.yahavi.com/$1 [L,R=301,NC]
+
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !/favicon\.ico [NC]
+RewriteRule . index.php [L]
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+    Header set Cache-Control "max-age=290304000, public"
+    Header set Expires "Fri, 03 Mar 2017 08:12:58 GMT"
+  </FilesMatch>
+</IfModule>

@@ -1,0 +1,91 @@
+
+.mason-grid{
+  max-width: 1000px;
+  margin: auto;
+}
+.mason-grid .grid-item{
+  background: #fff;
+  padding: 0px;
+  overflow: hidden;
+  width:calc(25% - 20px);
+  margin: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  position: relative;
+  cursor: pointer;
+}
+.mason-grid .grid-item:hover{
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+.mason-grid .grid-item h3{
+  margin: 0px;
+  padding: 0px 10px;
+  padding-top: 10px;
+ /* font-size: 16px;*/
+  font-weight: 600;
+/*  text-transform: lowercase;*/
+/* font-family: 'Alegreya Sans SC';*/
+  color: #5f5f5f;
+
+  /*CSS @Pawan*/
+  font-size: 14px;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+
+}
+.mason-grid .grid-item h4{
+  font-size: 14px;
+  margin-top: 0px;
+  padding: 0px 10px;
+  margin-bottom: 5px;
+}
+.mason-grid .grid-data{
+   background: #fff;
+  font-size: 0.84em;
+  color: #7f7f7f;
+} 
+.mason-grid .grid-item-cta{
+  background: #fff;
+  border-top: 1px solid #f0f0f0;  
+}
+.mason-grid .grid-item-cta a{
+  width: 20%;
+  display: inline-block;
+  padding: 5px;
+  margin: 0px;
+  float: left;
+  text-align: center;
+  border: 0.5px solid #f0f0f0;
+  border-width: 0px 0.5px 0px 0.5px;
+}
+.mason-grid .grid-item .footer{
+  /*border-top: 1px solid #f1f1f1;*/
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.mason-grid .grid-item .grid-item-location i{
+  padding-right: 5px;
+}
+
+.mason-grid .grid-item-cta{
+  position: absolute;
+  top: -30px;
+  width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.mason-grid .grid-item-cta a{
+  color:#ff5b56
+}
+
+.mason-grid .grid-item:hover .grid-item-cta{
+  display: block;
+  top: 0px;
+  background:rgba(255,255,255,0.9);
+}
+.mason-grid .grid-item:hover .grid-item-cta a:hover{
+  background: #ff5b56;
+ color: #fff;
+}
+

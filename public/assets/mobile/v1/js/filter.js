@@ -1,0 +1,3 @@
+$(document).on('ready',function(){$('.filter-toggle').on('click',function(){$('.filter-panel').toggleClass('open')})
+$('.filter-close').on('click',function(){$('.filter-panel').removeClass('open')})
+$('.categories ul li').on('click',function(){var data=$(this).data('ref');$('[data-ref]').removeClass('active');$('[data-ref="'+data+'"]').addClass('active');$('[data-filcontent]').removeClass('active');$('[data-filcontent="'+data+'"]').addClass('active').find('[type="text"]').val('').trigger("keyup");});});

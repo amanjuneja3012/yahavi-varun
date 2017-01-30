@@ -1,7 +1,7 @@
 RewriteEngine On
 
 RewriteCond %{HTTP_HOST} ^yahavi.com [NC]
-RewriteRule ^(.*)$ http://www.yahavi.com/$1 [L,R=301,NC]
+RewriteRule ^(.*)$ http://www.myyahavi.com/$1 [L,R=301,NC]
 
 #RewriteCond %{HTTP_HOST} ^yahavi.com [NC]
 #RewriteRule ^(.*)$ https://www.yahavi.com/$1 [L,R=301,NC]

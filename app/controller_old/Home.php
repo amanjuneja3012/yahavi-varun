@@ -22,7 +22,14 @@ class Home
 	}
 	public function index(){
 		$time=microtime(true);
-		return View::make('home/index',array('time'=>$time));
+		$curl=new curl;
+		@$json=$curl->get(API_URL.'/home/data?'.Helper::queryToken());
+		$data=json_decode($json)->data;
+		$this->user=$data->user;
+		$blog=$data->blog;
+		$artists=$data->artists;
+		$events=$data->events;
+		return View::make('home/index',array('time'=>$time,'featured_media'=>$data->featured_media,'blog'=>$blog,'artists'=>$artists,'events'=>$events,'featured_event'=>$data->featured_event,'user'=>$this->user));
 	}
 	public function terms(){
 		return View::make('home/terms',array('user'=>$this->user));

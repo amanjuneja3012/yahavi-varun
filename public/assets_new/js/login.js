@@ -38,7 +38,7 @@ var login = {
 					'</div>' +
 				'</div>' +
 			'</div>';
-		$("#login-layer-target").html(innerHtml);		
+		$("#login-layer-target").html(innerHtml);
 	},
 	showLoginlayer: function(){
 		$(".signup-container").show();

@@ -46,6 +46,7 @@ body{
 .bottom-carousal-container{
 	padding: 30px 0px 10px 0px;
 	position: relative;
+	overflow: scroll;
 }
 
 .bottom-carousal-container .title{
@@ -61,17 +62,20 @@ body{
 	cursor: pointer;
 	font-weight: 400;
 	font-size: 20px;
+	display: inline-flex;
+	margin-right: 14px;
 }
 
 .carousal-card-container{
-	height: 380px;
+	height: 390px;
 	overflow-x: scroll;
 }
 
 .carousal-card-container .cards{
 	position: relative;
+	display: inline-block;
 	width: 300px;
-	height: 300px;
+	height: 310px;
 	margin-left: 24px;
 	margin-top: 50px;
 	padding: 10px;
@@ -83,6 +87,7 @@ body{
 .video-card-container{
 	height: 260px;
 	overflow-x: scroll;
+	display: inline-flex;
 }
 
 .video-card-container .video-cards{
@@ -99,22 +104,24 @@ body{
 .video-card-image {
 	height: 100%;
 	background-color: #737b82;
+	background-size: contain;
 }
 
 .cards .card-image {
 	height: 160px;
 	background-color: aliceblue;
+	background-size: 100% 100%;
 }
 
 .cards .card-image-tag{
 	position: absolute;
 	background-color: rgba(0, 128, 0, 0.58);
 	top: 22px;
-    left: 20px;
-    padding: 6px;
-    border-radius: 48%;
-    border-radius: 40px;
-    color: white;
+	left: 20px;
+	padding: 6px;
+	border-radius: 48%;
+	border-radius: 40px;
+	color: white;
 }
 
 .cards .card-bottom-info{
@@ -123,32 +130,40 @@ body{
 }
 
 .cards .card-header-text{
-	margin: 10px 0px;
+	margin: 10px 0px 6px 0px;
 	font-weight: 500;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 	font-size: 20px;
 }
 
 .cards .card-text{
-	font-size: 16px;
-	height: 57px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+	font-size: 14px;
+	height: 84px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 	color: #7e7e7e;
 }
 
 .cards .card-time{
-	font-size: 16px;
+	font-size: 12px;
 	color: #7e7e7e;
 	display: inline-block;
-	width: 49%;
+	width: 40%;
 	padding: 10px 0px;
+	vertical-align: top;
 }
 
 .cards .card-venue{
-	font-size: 16px;
+	font-size: 12px;
 	color: #7e7e7e;
 	display: inline-block;
-	width: 49%;
+	width: 60%;
 	text-align: right;
 	padding: 10px 0px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	vertical-align: top;
+	white-space: nowrap;
 }

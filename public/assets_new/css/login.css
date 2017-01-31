@@ -1,0 +1,90 @@
+.hide{
+	display:none;
+}
+
+.login {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.login .login-header{
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	font-weight: 500;
+	font-size: 22px;
+
+}
+
+.social-Button{
+	margin: 10px auto;
+    width: 70%;
+    max-width: 250px;
+    padding: 18px;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.fb{
+	background-color:#3b5998;
+}
+
+.google{
+	background-color:#d50f25 ;
+}
+
+.signUp{
+	background-color: rgba(11, 193, 11, 0.74);
+	margin: 6px auto;
+}
+
+.signIn{
+	background-color: rgba(11, 193, 11, 0.74);
+	margin: 20px auto;
+}
+
+.break{
+	text-align: center;
+}
+
+.signin-form .break{
+	margin: 20px 0px;
+}
+
+.break .text{
+	margin: 20px auto;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	color: #7e7e7e;
+}
+
+.form{
+	margin: 12px auto;
+	text-align: center;
+
+}
+
+.input{
+	max-width: 240px;
+	margin: 4px;
+	padding: 20px;
+	width: 100%;
+	border: 1px solid rgba(126, 126, 126, 0.25)
+}
+
+.input:focus{
+	outline: none;
+}
+
+.input::placeholder{
+	list-style: 20px;
+}
+
+.forgot-password{
+	text-align: right;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #5e23dc;
+}

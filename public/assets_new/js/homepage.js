@@ -43,6 +43,11 @@ var homepage = {
 	
 	getRequestToken: function(){
 		var request_token = getCookie("request_token");
+		
+		//for testing purposes
+		request_token="07fd5fe4c79ecf8cfdf6e2d8aa555d5aaa46ad2d1d72c1cfd2aaa82b04cba7b4";
+		//end
+		
 		if (typeof request_token == "undefined" || request_token == null){
 			return null;
 		}

@@ -43,7 +43,9 @@ $head=[
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-	<div class="header" ></div>
+	<div class="header" >
+		<button id="login-button" style="float: right;height: 100%;width: 10%;">Sign In</button>
+	</div>
 	<div id="homeBanner" class="top-carousal-card _featured">
 		<h1 class="top-carousal-card-heading">Starboy at NSCI</h1>
 		<p class="top-carousal-card-sub-heading">NSCI Worli 18th December</p>
@@ -104,8 +106,14 @@ $head=[
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
+	<div id="login-layer-target">
+		
+	</div>
 </body>
 </html>
 <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="/assets_new/js/homepage.js"></script>
+<link rel="stylesheet" href="/assets_new/css/login.css">
+<script type="text/javascript" src="/assets_new/js/login.js"></script>
+

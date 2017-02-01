@@ -89,24 +89,26 @@ var homepage = {
 	makeResponsiveCarousel: function(el){
 		el.slick({
 			dots: true,
-			infinite: true,
+			infinite: false,
 			speed: 300,
-			slidesToShow: 4,
-			slidesToScroll: 4,
+			slidesToShow: 3,
+			slidesToScroll: 3,
 			lazyLoad: 'ondemand',
 			responsive: [
 		    {
 		      breakpoint: 1024,
 		      settings: {
+		      	arrows:true,
 		        slidesToShow: 3,
 		        slidesToScroll: 3,
-		        infinite: true,
+		        infinite: false,
 		        dots: true
 		      }
 		    },
 		    {
 		      breakpoint: 600,
 		      settings: {
+		      	arrow:true,
 		        slidesToShow: 2,
 		        slidesToScroll: 2
 		      }
@@ -114,6 +116,7 @@ var homepage = {
 		    {
 		      breakpoint: 480,
 		      settings: {
+		      	arrow:true,
 		        slidesToShow: 1,
 		        slidesToScroll: 1
 		      }
@@ -165,16 +168,16 @@ var homepage = {
 		    {
 		      breakpoint: 768,
 		      settings: {
-		        arrows: false,
+		        arrows: true,
 		        centerMode: true,
 		        centerPadding: '60px',
-		        slidesToShow: 3
+		        slidesToShow: 2
 		      }
 		    },
 		    {
 		      breakpoint: 480,
 		      settings: {
-		        arrows: false,
+		        arrows: true,
 		        centerMode: true,
 		        centerPadding: '40px',
 		        slidesToShow: 1
@@ -198,6 +201,7 @@ var homepage = {
 						'</div>';
 		});
 		$component.html(innerHtml);
+		this.makeResponsiveCarousel($component);
 	},
 	
 	logger: true,

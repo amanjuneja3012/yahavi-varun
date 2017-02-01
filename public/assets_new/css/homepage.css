@@ -46,7 +46,6 @@ body{
 .bottom-carousal-container{
 	padding: 30px 0px 10px 0px;
 	position: relative;
-	overflow: scroll;
 }
 
 .bottom-carousal-container .title{
@@ -68,7 +67,6 @@ body{
 
 .carousal-card-container{
 	height: 390px;
-	overflow-x: scroll;
 }
 
 .carousal-card-container .cards{
@@ -86,7 +84,6 @@ body{
 
 .video-card-container{
 	height: 260px;
-	overflow-x: scroll;
 	display: inline-flex;
 }
 

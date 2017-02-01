@@ -69,12 +69,14 @@
     font-family: 'slick';
     font-size: 20px;
     line-height: 1;
-
     opacity: .75;
-    color: white;
-
+    color: #7f7f7f;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding: 12px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px;
 }
 
 .slick-prev

@@ -167,3 +167,11 @@ body{
 	vertical-align: top;
 	white-space: nowrap;
 }
+._videos{
+	padding: 0 3.2%;
+}
+._blogs{
+	.card-text{
+		height: 130px;
+	}
+}

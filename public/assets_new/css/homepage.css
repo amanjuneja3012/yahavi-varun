@@ -2,6 +2,9 @@ body{
 	margin:0;
 	padding: 0;
 }
+*{
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
 
 .header{
 	height: 40px;
@@ -44,21 +47,23 @@ body{
 }
 
 .bottom-carousal-container{
-    padding: 4% 7%;
+    padding: 4% 7% 4% 5%;
     position: relative;
 }
 
 .bottom-carousal-container .title{
 	font-weight: 600;
 	font-size: 20px;
+	margin-left: 3.5%;
 }
 .bottom-carousal-container .view-all-button{
 	color: #5e23dc;
-	cursor: pointer;
-	font-weight: 400;
-	font-size: 20px;
-	display: inline-flex;
-	float: right;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+    display: inline-flex;
+    float: right;
+    margin-right: 2%;
 }
 
 .carousal-card-container{

@@ -40,6 +40,9 @@ $head=[
 <head>
 	<title>Yahavi - Search Events and Book artists in Delhi/NCR, Bangalore, Mumbai, Kolkata, Chennai, Hyderabad</title>
 	<link rel="stylesheet" href="/assets_new/css/homepage.css">
+	<link rel="stylesheet" href="/assets_new/css/login.css">
+	<link rel="stylesheet" href="/assets_new/css/slick.css">
+	<link rel="stylesheet" href="/assets_new/css/slick-theme.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
@@ -113,7 +116,7 @@ $head=[
 </body>
 </html>
 <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/assets_new/js/slick.min.js"></script>
 <script type="text/javascript" src="/assets_new/js/homepage.js"></script>
-<link rel="stylesheet" href="/assets_new/css/login.css">
 <script type="text/javascript" src="/assets_new/js/login.js"></script>
 

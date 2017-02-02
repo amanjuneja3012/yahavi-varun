@@ -49,9 +49,15 @@ $head=[
 	<div class="header" >
 		<button id="login-button" style="float: right;height: 100%;width: 10%;">Sign In</button>
 	</div>
-	<div id="homeBanner" class="top-carousal-card _featured">
-		<h1 class="top-carousal-card-heading">Starboy at NSCI</h1>
-		<p class="top-carousal-card-sub-heading">NSCI Worli 18th December</p>
+	<div id="homeBanner" class="top-carousal-card-container">
+		<div class="top-carousal-card" style="background-image: url(http://tinyurl.com/jnz8fkg);">
+			<h1 class="top-carousal-card-heading">Random Music Gig</h1>
+			<p class="top-carousal-card-sub-heading">Someday, Someplace</p>
+		</div>
+		<div class="top-carousal-card" style="background-image: url(http://tinyurl.com/h3p2vqf);">
+			<h1 class="top-carousal-card-heading">NH7 Weekender</h1>
+			<p class="top-carousal-card-sub-heading">November 3, Kolkata</p>
+		</div>
 	</div>
 	<div id="homeCarouselContainer" class="bottom-container">
 		<div class="bottom-carousal-container">
@@ -116,6 +122,7 @@ $head=[
 </body>
 </html>
 <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/assets/js/cookie.js"></script>
 <script type="text/javascript" src="/assets_new/js/slick.min.js"></script>
 <script type="text/javascript" src="/assets_new/js/homepage.js"></script>
 <script type="text/javascript" src="/assets_new/js/login.js"></script>

@@ -11,11 +11,16 @@ body{
 	width: 100%;
 	background-color: red;
 }
+
+.top-carousal-card-container{
+	height: 300px;
+	overflow:hidden;
+}
+
 .top-carousal-card{
 	position: relative;
 	width: 100%;
-	height: 300px;
-	background-image: url(http://tinyurl.com/jnc6wqy);
+	height: 100%;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }

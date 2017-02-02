@@ -17,10 +17,11 @@ var selectorMatrix ={
 };
 		
 var homepage = {
+	apiUrl: 'http://api.beta.yahavi.com',
 	data: null,
 	
 	init: function(){
-		var dataUrl = 'http://api.beta.yahavi.com/home/data',
+		var dataUrl = this.apiUrl+'/home/data',
 			params = {'request_token':this.getRequestToken()},
 			self = this;
 		$.ajax({
@@ -42,13 +43,11 @@ var homepage = {
 	},
 	
 	getRequestToken: function(){
-		var request_token = getCookie("request_token");
-		
-		//for testing purposes
-		request_token="07fd5fe4c79ecf8cfdf6e2d8aa555d5aaa46ad2d1d72c1cfd2aaa82b04cba7b4";
-		//end
+		var request_token = $.cookie("request_token");
 		
 		if (typeof request_token == "undefined" || request_token == null){
+			//todo remove after dev
+			return "89d9d0a13dc3d561463fb8ef11c3cdf2ba1ac85a05304dc7b420299b4beb295b";
 			return null;
 		}
 		return request_token;
@@ -65,7 +64,47 @@ var homepage = {
 	},
 
 	populateFeaturedEvent: function(data){
-		var $component = $(selectorMatrix["HOMEPAGE"]["BANNER"]["FEATURED"]);
+		var $component = $(selectorMatrix["HOMEPAGE"]["BANNER"]["FEATURED"]),
+			prependHtml = "";
+//		console.log(data);
+		$.each(data,function(key,event){
+			prependHtml +='<div class="top-carousal-card _featured" style="background-image: url(\''+event.event_image+'\');">' +
+							'<h1 class="top-carousal-card-heading">'+event.name+'</h1>' +
+							'<p class="top-carousal-card-sub-heading">'+event.dateStr+' '+event.locality+'</p>' +
+							'</div>';
+		});
+		$component.prepend(prependHtml);
+		this.makeResponsiveCarouselBanner($component);
+	},
+	makeResponsiveCarouselBanner: function(el){
+		el.slick({
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows:false,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			lazyLoad: 'ondemand',
+			responsive: [
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		      }
+		    },
+		    {
+		      breakpoint: 600,
+		      settings: {
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		      }
+		    }
+		  ]
+		});
 	},
 	populateEventsCarousel: function(data){
 		var $component = $(selectorMatrix["HOMEPAGE"]["CAROUSEL"]["EVENTS"]),
@@ -108,7 +147,7 @@ var homepage = {
 		    {
 		      breakpoint: 600,
 		      settings: {
-		      	arrow:true,
+		      	arrows:true,
 		        slidesToShow: 2,
 		        slidesToScroll: 2
 		      }
@@ -116,7 +155,7 @@ var homepage = {
 		    {
 		      breakpoint: 480,
 		      settings: {
-		      	arrow:true,
+		      	arrows:true,
 		        slidesToShow: 1,
 		        slidesToScroll: 1
 		      }
@@ -210,28 +249,6 @@ var homepage = {
             console.log(msg);
         }
     }
-}
-
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
 }
 
 $(document).ready(function () {

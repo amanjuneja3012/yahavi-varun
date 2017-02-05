@@ -47,7 +47,17 @@ $head=[
 </head>
 <body>
 	<div class="header" >
-		<button id="login-button" style="float: right;height: 100%;width: 10%;">Sign In</button>
+		<span class="logo-container">
+			<span class="header-logo" ></span>
+			<span class='header-logo-text'>YAHAVI</span>
+		</span>
+		<span>
+			<span class='header-logo'></span>
+			<span class='header-logo'></span>
+			<span class='header-logo'></span>
+			<button id="login-button" style="float: right;height: 100%;width: 10%;">Sign In</button>
+		</span>
+
 	</div>
 	<div id="homeBanner" class="top-carousal-card-container">
 		<div class="top-carousal-card" style="background-image: url(http://tinyurl.com/jnz8fkg);">

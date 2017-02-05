@@ -51,11 +51,11 @@ $head=[
 			<span class="header-logo" ></span>
 			<span class='header-logo-text'>YAHAVI</span>
 		</span>
-		<span>
-			<span class='header-logo'></span>
-			<span class='header-logo'></span>
-			<span class='header-logo'></span>
-			<button id="login-button" style="float: right;height: 100%;width: 10%;">Sign In</button>
+		<span class='header-right-container'>
+			<span class='header-right'>Events</span>
+			<span class='header-right'>Artists</span>
+			<span class='header-right'>Videos</span>
+			<button id="login-button" style="margin-left: 50px;">Sign In</button>
 		</span>
 	</div>
 	<div id="homeBanner" class="top-carousal-card-container">

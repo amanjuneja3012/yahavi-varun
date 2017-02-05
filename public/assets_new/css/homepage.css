@@ -25,11 +25,20 @@ body{
     margin-top: 22px;
 }
 
+.header-right-container{
+	float: right;
+    line-height: 70px;
+}
+
 .header-logo-text{
 	line-height: 70px;
     vertical-align: top;
     font-size: 24px;
     font-weight: 900;
+}
+
+.header-right{
+	margin-left: 50px;
 }
 
 .top-carousal-card-container{

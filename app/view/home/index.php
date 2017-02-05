@@ -57,7 +57,6 @@ $head=[
 			<span class='header-logo'></span>
 			<button id="login-button" style="float: right;height: 100%;width: 10%;">Sign In</button>
 		</span>
-
 	</div>
 	<div id="homeBanner" class="top-carousal-card-container">
 		<div class="top-carousal-card" style="background-image: url(http://tinyurl.com/jnz8fkg);">
